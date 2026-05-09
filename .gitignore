@@ -1,0 +1,19 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.Python
+.venv/
+venv/
+.env
+
+# CIFAR-10 / datasets
+data/
+
+# Live training artifacts
+results/run.log
+results/run.pid
+*.tmp
+
+# OS
+.DS_Store
