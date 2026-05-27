@@ -1,0 +1,752 @@
+device: mps
+
+=== resnet20: building model and loaders ===
+resnet20: 0.270M params, 19 Conv2d layers
+resnet20 epoch 1/100 step 0/391 loss=3.6886 lr=0.1000 elapsed=9.1s
+resnet20 epoch 1/100 step 100/391 loss=1.7690 lr=0.1000 elapsed=17.1s
+resnet20 epoch 1/100 step 200/391 loss=1.6656 lr=0.1000 elapsed=24.8s
+resnet20 epoch 1/100 step 300/391 loss=1.3206 lr=0.1000 elapsed=32.5s
+resnet20 epoch 1 done: train_loss=1.7369 test_acc=0.4905 elapsed=50.0s
+resnet20 epoch 2/100 step 0/391 loss=1.2269 lr=0.1000 elapsed=50.1s
+resnet20 epoch 2/100 step 100/391 loss=1.5295 lr=0.1000 elapsed=57.9s
+resnet20 epoch 2/100 step 200/391 loss=1.3832 lr=0.1000 elapsed=65.9s
+resnet20 epoch 2/100 step 300/391 loss=1.0723 lr=0.1000 elapsed=74.9s
+resnet20 epoch 2 done: train_loss=1.2074 test_acc=0.5957 elapsed=83.5s
+resnet20 epoch 3/100 step 0/391 loss=0.9360 lr=0.1000 elapsed=83.6s
+resnet20 epoch 3/100 step 100/391 loss=1.1213 lr=0.1000 elapsed=91.2s
+resnet20 epoch 3/100 step 200/391 loss=1.0281 lr=0.1000 elapsed=98.8s
+resnet20 epoch 3/100 step 300/391 loss=0.8708 lr=0.1000 elapsed=106.3s
+resnet20 epoch 3 done: train_loss=0.9661 test_acc=0.6483 elapsed=115.1s
+resnet20 epoch 4/100 step 0/391 loss=0.7596 lr=0.1000 elapsed=115.2s
+resnet20 epoch 4/100 step 100/391 loss=0.8968 lr=0.1000 elapsed=122.6s
+resnet20 epoch 4/100 step 200/391 loss=1.0223 lr=0.1000 elapsed=130.0s
+resnet20 epoch 4/100 step 300/391 loss=0.7392 lr=0.1000 elapsed=138.0s
+resnet20 epoch 4 done: train_loss=0.8026 test_acc=0.7272 elapsed=146.7s
+resnet20 epoch 5/100 step 0/391 loss=0.7132 lr=0.1000 elapsed=146.8s
+resnet20 epoch 5/100 step 100/391 loss=0.7224 lr=0.1000 elapsed=154.4s
+resnet20 epoch 5/100 step 200/391 loss=0.6044 lr=0.1000 elapsed=162.3s
+resnet20 epoch 5/100 step 300/391 loss=0.5787 lr=0.1000 elapsed=170.3s
+resnet20 epoch 5 done: train_loss=0.7083 test_acc=0.7399 elapsed=178.9s
+resnet20 epoch 6/100 step 0/391 loss=0.7055 lr=0.1000 elapsed=179.1s
+resnet20 epoch 6/100 step 100/391 loss=0.5207 lr=0.1000 elapsed=187.0s
+resnet20 epoch 6/100 step 200/391 loss=0.6006 lr=0.1000 elapsed=195.2s
+resnet20 epoch 6/100 step 300/391 loss=0.7045 lr=0.1000 elapsed=203.1s
+resnet20 epoch 6 done: train_loss=0.6416 test_acc=0.7345 elapsed=211.7s
+resnet20 epoch 7/100 step 0/391 loss=0.5245 lr=0.1000 elapsed=212.0s
+resnet20 epoch 7/100 step 100/391 loss=0.5986 lr=0.1000 elapsed=219.6s
+resnet20 epoch 7/100 step 200/391 loss=0.6162 lr=0.1000 elapsed=227.4s
+resnet20 epoch 7/100 step 300/391 loss=0.8032 lr=0.1000 elapsed=235.2s
+resnet20 epoch 7 done: train_loss=0.5958 test_acc=0.7800 elapsed=243.9s
+resnet20 epoch 8/100 step 0/391 loss=0.5163 lr=0.1000 elapsed=244.1s
+resnet20 epoch 8/100 step 100/391 loss=0.5552 lr=0.1000 elapsed=251.6s
+resnet20 epoch 8/100 step 200/391 loss=0.5631 lr=0.1000 elapsed=259.1s
+resnet20 epoch 8/100 step 300/391 loss=0.7358 lr=0.1000 elapsed=266.6s
+resnet20 epoch 8 done: train_loss=0.5547 test_acc=0.7950 elapsed=275.2s
+resnet20 epoch 9/100 step 0/391 loss=0.4797 lr=0.1000 elapsed=275.3s
+resnet20 epoch 9/100 step 100/391 loss=0.4703 lr=0.1000 elapsed=282.7s
+resnet20 epoch 9/100 step 200/391 loss=0.6240 lr=0.1000 elapsed=290.3s
+resnet20 epoch 9/100 step 300/391 loss=0.3588 lr=0.1000 elapsed=297.8s
+resnet20 epoch 9 done: train_loss=0.5297 test_acc=0.7820 elapsed=306.4s
+resnet20 epoch 10/100 step 0/391 loss=0.4837 lr=0.1000 elapsed=306.5s
+resnet20 epoch 10/100 step 100/391 loss=0.5062 lr=0.1000 elapsed=315.0s
+resnet20 epoch 10/100 step 200/391 loss=0.5015 lr=0.1000 elapsed=322.6s
+resnet20 epoch 10/100 step 300/391 loss=0.5268 lr=0.1000 elapsed=330.1s
+resnet20 epoch 10 done: train_loss=0.5079 test_acc=0.7757 elapsed=338.8s
+resnet20 epoch 11/100 step 0/391 loss=0.5143 lr=0.1000 elapsed=338.9s
+resnet20 epoch 11/100 step 100/391 loss=0.4360 lr=0.1000 elapsed=346.4s
+resnet20 epoch 11/100 step 200/391 loss=0.4730 lr=0.1000 elapsed=353.9s
+resnet20 epoch 11/100 step 300/391 loss=0.4465 lr=0.1000 elapsed=361.8s
+resnet20 epoch 11 done: train_loss=0.4791 test_acc=0.7974 elapsed=370.3s
+resnet20 epoch 12/100 step 0/391 loss=0.6426 lr=0.1000 elapsed=370.4s
+resnet20 epoch 12/100 step 100/391 loss=0.4057 lr=0.1000 elapsed=378.0s
+resnet20 epoch 12/100 step 200/391 loss=0.4208 lr=0.1000 elapsed=385.5s
+resnet20 epoch 12/100 step 300/391 loss=0.4009 lr=0.1000 elapsed=393.1s
+resnet20 epoch 12 done: train_loss=0.4631 test_acc=0.8219 elapsed=401.7s
+resnet20 epoch 13/100 step 0/391 loss=0.4576 lr=0.1000 elapsed=401.8s
+resnet20 epoch 13/100 step 100/391 loss=0.5338 lr=0.1000 elapsed=409.6s
+resnet20 epoch 13/100 step 200/391 loss=0.4161 lr=0.1000 elapsed=417.2s
+resnet20 epoch 13/100 step 300/391 loss=0.5444 lr=0.1000 elapsed=424.8s
+resnet20 epoch 13 done: train_loss=0.4412 test_acc=0.8139 elapsed=433.4s
+resnet20 epoch 14/100 step 0/391 loss=0.5313 lr=0.1000 elapsed=433.6s
+resnet20 epoch 14/100 step 100/391 loss=0.3073 lr=0.1000 elapsed=441.1s
+resnet20 epoch 14/100 step 200/391 loss=0.4108 lr=0.1000 elapsed=448.7s
+resnet20 epoch 14/100 step 300/391 loss=0.4504 lr=0.1000 elapsed=456.3s
+resnet20 epoch 14 done: train_loss=0.4323 test_acc=0.7980 elapsed=464.7s
+resnet20 epoch 15/100 step 0/391 loss=0.4935 lr=0.1000 elapsed=464.8s
+resnet20 epoch 15/100 step 100/391 loss=0.5573 lr=0.1000 elapsed=472.5s
+resnet20 epoch 15/100 step 200/391 loss=0.3387 lr=0.1000 elapsed=480.2s
+resnet20 epoch 15/100 step 300/391 loss=0.3278 lr=0.1000 elapsed=487.8s
+resnet20 epoch 15 done: train_loss=0.4217 test_acc=0.8164 elapsed=496.5s
+resnet20 epoch 16/100 step 0/391 loss=0.3867 lr=0.1000 elapsed=496.6s
+resnet20 epoch 16/100 step 100/391 loss=0.4548 lr=0.1000 elapsed=504.2s
+resnet20 epoch 16/100 step 200/391 loss=0.4767 lr=0.1000 elapsed=511.7s
+resnet20 epoch 16/100 step 300/391 loss=0.4637 lr=0.1000 elapsed=519.2s
+resnet20 epoch 16 done: train_loss=0.4093 test_acc=0.8157 elapsed=527.7s
+resnet20 epoch 17/100 step 0/391 loss=0.4612 lr=0.1000 elapsed=527.9s
+resnet20 epoch 17/100 step 100/391 loss=0.3516 lr=0.1000 elapsed=535.4s
+resnet20 epoch 17/100 step 200/391 loss=0.3331 lr=0.1000 elapsed=543.0s
+resnet20 epoch 17/100 step 300/391 loss=0.4772 lr=0.1000 elapsed=550.7s
+resnet20 epoch 17 done: train_loss=0.4000 test_acc=0.8217 elapsed=559.4s
+resnet20 epoch 18/100 step 0/391 loss=0.3510 lr=0.1000 elapsed=559.5s
+resnet20 epoch 18/100 step 100/391 loss=0.4796 lr=0.1000 elapsed=567.2s
+resnet20 epoch 18/100 step 200/391 loss=0.3674 lr=0.1000 elapsed=574.7s
+resnet20 epoch 18/100 step 300/391 loss=0.3748 lr=0.1000 elapsed=582.3s
+resnet20 epoch 18 done: train_loss=0.3880 test_acc=0.8041 elapsed=590.9s
+resnet20 epoch 19/100 step 0/391 loss=0.2466 lr=0.1000 elapsed=591.0s
+resnet20 epoch 19/100 step 100/391 loss=0.4570 lr=0.1000 elapsed=598.7s
+resnet20 epoch 19/100 step 200/391 loss=0.4060 lr=0.1000 elapsed=606.5s
+resnet20 epoch 19/100 step 300/391 loss=0.3977 lr=0.1000 elapsed=614.0s
+resnet20 epoch 19 done: train_loss=0.3779 test_acc=0.8323 elapsed=622.6s
+resnet20 epoch 20/100 step 0/391 loss=0.2733 lr=0.1000 elapsed=622.7s
+resnet20 epoch 20/100 step 100/391 loss=0.3835 lr=0.1000 elapsed=630.4s
+resnet20 epoch 20/100 step 200/391 loss=0.3008 lr=0.1000 elapsed=638.0s
+resnet20 epoch 20/100 step 300/391 loss=0.2787 lr=0.1000 elapsed=645.6s
+resnet20 epoch 20 done: train_loss=0.3712 test_acc=0.8167 elapsed=654.2s
+resnet20 epoch 21/100 step 0/391 loss=0.3143 lr=0.1000 elapsed=654.3s
+resnet20 epoch 21/100 step 100/391 loss=0.3896 lr=0.1000 elapsed=661.9s
+resnet20 epoch 21/100 step 200/391 loss=0.4593 lr=0.1000 elapsed=669.5s
+resnet20 epoch 21/100 step 300/391 loss=0.4492 lr=0.1000 elapsed=677.1s
+resnet20 epoch 21 done: train_loss=0.3603 test_acc=0.7777 elapsed=685.5s
+resnet20 epoch 22/100 step 0/391 loss=0.3454 lr=0.1000 elapsed=685.6s
+resnet20 epoch 22/100 step 100/391 loss=0.3769 lr=0.1000 elapsed=693.1s
+resnet20 epoch 22/100 step 200/391 loss=0.3015 lr=0.1000 elapsed=700.9s
+resnet20 epoch 22/100 step 300/391 loss=0.2864 lr=0.1000 elapsed=708.4s
+resnet20 epoch 22 done: train_loss=0.3552 test_acc=0.8061 elapsed=717.1s
+resnet20 epoch 23/100 step 0/391 loss=0.2781 lr=0.1000 elapsed=717.2s
+resnet20 epoch 23/100 step 100/391 loss=0.4007 lr=0.1000 elapsed=724.8s
+resnet20 epoch 23/100 step 200/391 loss=0.3717 lr=0.1000 elapsed=732.4s
+resnet20 epoch 23/100 step 300/391 loss=0.3831 lr=0.1000 elapsed=740.1s
+resnet20 epoch 23 done: train_loss=0.3461 test_acc=0.8220 elapsed=748.5s
+resnet20 epoch 24/100 step 0/391 loss=0.2930 lr=0.1000 elapsed=748.6s
+resnet20 epoch 24/100 step 100/391 loss=0.1874 lr=0.1000 elapsed=756.4s
+resnet20 epoch 24/100 step 200/391 loss=0.3483 lr=0.1000 elapsed=763.9s
+resnet20 epoch 24/100 step 300/391 loss=0.2033 lr=0.1000 elapsed=1022.2s
+resnet20 epoch 24 done: train_loss=0.3460 test_acc=0.8353 elapsed=1045.9s
+resnet20 epoch 25/100 step 0/391 loss=0.3501 lr=0.1000 elapsed=1047.6s
+resnet20 epoch 25/100 step 100/391 loss=0.4514 lr=0.1000 elapsed=1064.3s
+resnet20 epoch 25/100 step 200/391 loss=0.2104 lr=0.1000 elapsed=1820.6s
+resnet20 epoch 25/100 step 300/391 loss=0.2869 lr=0.1000 elapsed=1836.4s
+resnet20 epoch 25 done: train_loss=0.3388 test_acc=0.8222 elapsed=1854.3s
+resnet20 epoch 26/100 step 0/391 loss=0.2885 lr=0.1000 elapsed=1854.5s
+resnet20 epoch 26/100 step 100/391 loss=0.2087 lr=0.1000 elapsed=1923.9s
+resnet20 epoch 26/100 step 200/391 loss=0.2022 lr=0.1000 elapsed=1934.9s
+resnet20 epoch 26/100 step 300/391 loss=0.4468 lr=0.1000 elapsed=1951.7s
+resnet20 epoch 26 done: train_loss=0.3357 test_acc=0.8428 elapsed=1967.5s
+resnet20 epoch 27/100 step 0/391 loss=0.3993 lr=0.1000 elapsed=1967.8s
+resnet20 epoch 27/100 step 100/391 loss=0.2364 lr=0.1000 elapsed=1988.5s
+resnet20 epoch 27/100 step 200/391 loss=0.2491 lr=0.1000 elapsed=2124.1s
+resnet20 epoch 27/100 step 300/391 loss=0.3236 lr=0.1000 elapsed=2138.6s
+resnet20 epoch 27 done: train_loss=0.3256 test_acc=0.8409 elapsed=2156.6s
+resnet20 epoch 28/100 step 0/391 loss=0.3098 lr=0.1000 elapsed=2157.0s
+resnet20 epoch 28/100 step 100/391 loss=0.3126 lr=0.1000 elapsed=2199.7s
+resnet20 epoch 28/100 step 200/391 loss=0.3056 lr=0.1000 elapsed=2209.7s
+resnet20 epoch 28/100 step 300/391 loss=0.4102 lr=0.1000 elapsed=2381.2s
+resnet20 epoch 28 done: train_loss=0.3244 test_acc=0.8048 elapsed=2611.3s
+resnet20 epoch 29/100 step 0/391 loss=0.2929 lr=0.1000 elapsed=2628.2s
+resnet20 epoch 29/100 step 100/391 loss=0.4279 lr=0.1000 elapsed=2641.4s
+resnet20 epoch 29/100 step 200/391 loss=0.4512 lr=0.1000 elapsed=2659.1s
+resnet20 epoch 29/100 step 300/391 loss=0.3307 lr=0.1000 elapsed=2710.3s
+resnet20 epoch 29 done: train_loss=0.3179 test_acc=0.8247 elapsed=2957.3s
+resnet20 epoch 30/100 step 0/391 loss=0.3161 lr=0.1000 elapsed=2957.5s
+resnet20 epoch 30/100 step 100/391 loss=0.4043 lr=0.1000 elapsed=2977.3s
+resnet20 epoch 30/100 step 200/391 loss=0.3347 lr=0.1000 elapsed=2995.2s
+resnet20 epoch 30/100 step 300/391 loss=0.2345 lr=0.1000 elapsed=4006.4s
+resnet20 epoch 30 done: train_loss=0.3177 test_acc=0.8294 elapsed=4197.5s
+resnet20 epoch 31/100 step 0/391 loss=0.2968 lr=0.1000 elapsed=4197.9s
+resnet20 epoch 31/100 step 100/391 loss=0.3070 lr=0.1000 elapsed=4216.6s
+resnet20 epoch 31/100 step 200/391 loss=0.3682 lr=0.1000 elapsed=4241.1s
+resnet20 epoch 31/100 step 300/391 loss=0.2489 lr=0.1000 elapsed=4258.4s
+resnet20 epoch 31 done: train_loss=0.3089 test_acc=0.8539 elapsed=4276.9s
+resnet20 epoch 32/100 step 0/391 loss=0.2484 lr=0.1000 elapsed=4277.1s
+resnet20 epoch 32/100 step 100/391 loss=0.2820 lr=0.1000 elapsed=4694.1s
+resnet20 epoch 32/100 step 200/391 loss=0.2647 lr=0.1000 elapsed=4711.9s
+resnet20 epoch 32/100 step 300/391 loss=0.2964 lr=0.1000 elapsed=4734.0s
+resnet20 epoch 32 done: train_loss=0.3038 test_acc=0.8469 elapsed=4750.9s
+resnet20 epoch 33/100 step 0/391 loss=0.3422 lr=0.1000 elapsed=4751.0s
+resnet20 epoch 33/100 step 100/391 loss=0.2601 lr=0.1000 elapsed=4759.7s
+resnet20 epoch 33/100 step 200/391 loss=0.2067 lr=0.1000 elapsed=4781.9s
+resnet20 epoch 33/100 step 300/391 loss=0.3201 lr=0.1000 elapsed=4989.5s
+resnet20 epoch 33 done: train_loss=0.3048 test_acc=0.8056 elapsed=5007.8s
+resnet20 epoch 34/100 step 0/391 loss=0.1496 lr=0.1000 elapsed=5008.2s
+resnet20 epoch 34/100 step 100/391 loss=0.2480 lr=0.1000 elapsed=5135.7s
+resnet20 epoch 34/100 step 200/391 loss=0.3560 lr=0.1000 elapsed=5146.2s
+resnet20 epoch 34/100 step 300/391 loss=0.3960 lr=0.1000 elapsed=5161.5s
+resnet20 epoch 34 done: train_loss=0.2983 test_acc=0.8417 elapsed=5176.9s
+resnet20 epoch 35/100 step 0/391 loss=0.2599 lr=0.1000 elapsed=5177.1s
+resnet20 epoch 35/100 step 100/391 loss=0.2745 lr=0.1000 elapsed=5219.9s
+resnet20 epoch 35/100 step 200/391 loss=0.4064 lr=0.1000 elapsed=5234.3s
+resnet20 epoch 35/100 step 300/391 loss=0.3574 lr=0.1000 elapsed=5246.7s
+resnet20 epoch 35 done: train_loss=0.2969 test_acc=0.8536 elapsed=5274.6s
+resnet20 epoch 36/100 step 0/391 loss=0.2892 lr=0.1000 elapsed=5274.7s
+resnet20 epoch 36/100 step 100/391 loss=0.2613 lr=0.1000 elapsed=5286.7s
+resnet20 epoch 36/100 step 200/391 loss=0.2068 lr=0.1000 elapsed=5294.4s
+resnet20 epoch 36/100 step 300/391 loss=0.3021 lr=0.1000 elapsed=5306.9s
+resnet20 epoch 36 done: train_loss=0.2941 test_acc=0.8411 elapsed=5352.4s
+resnet20 epoch 37/100 step 0/391 loss=0.3286 lr=0.1000 elapsed=5352.6s
+resnet20 epoch 37/100 step 100/391 loss=0.2806 lr=0.1000 elapsed=5366.6s
+resnet20 epoch 37/100 step 200/391 loss=0.1955 lr=0.1000 elapsed=5380.6s
+resnet20 epoch 37/100 step 300/391 loss=0.2079 lr=0.1000 elapsed=5393.9s
+resnet20 epoch 37 done: train_loss=0.2878 test_acc=0.8518 elapsed=5434.9s
+resnet20 epoch 38/100 step 0/391 loss=0.2075 lr=0.1000 elapsed=5435.0s
+resnet20 epoch 38/100 step 100/391 loss=0.3211 lr=0.1000 elapsed=5448.5s
+resnet20 epoch 38/100 step 200/391 loss=0.3076 lr=0.1000 elapsed=5462.6s
+resnet20 epoch 38/100 step 300/391 loss=0.2934 lr=0.1000 elapsed=5470.4s
+resnet20 epoch 38 done: train_loss=0.2912 test_acc=0.8483 elapsed=6450.3s
+resnet20 epoch 39/100 step 0/391 loss=0.2221 lr=0.1000 elapsed=6450.5s
+resnet20 epoch 39/100 step 100/391 loss=0.2396 lr=0.1000 elapsed=7167.7s
+resnet20 epoch 39/100 step 200/391 loss=0.2109 lr=0.1000 elapsed=7184.4s
+resnet20 epoch 39/100 step 300/391 loss=0.3281 lr=0.1000 elapsed=8026.5s
+resnet20 epoch 39 done: train_loss=0.2837 test_acc=0.8343 elapsed=8039.8s
+resnet20 epoch 40/100 step 0/391 loss=0.2682 lr=0.1000 elapsed=8040.2s
+resnet20 epoch 40/100 step 100/391 loss=0.1679 lr=0.1000 elapsed=8049.1s
+resnet20 epoch 40/100 step 200/391 loss=0.2693 lr=0.1000 elapsed=8066.6s
+resnet20 epoch 40/100 step 300/391 loss=0.2581 lr=0.1000 elapsed=10091.0s
+resnet20 epoch 40 done: train_loss=0.2846 test_acc=0.8172 elapsed=10714.3s
+resnet20 epoch 41/100 step 0/391 loss=0.2166 lr=0.1000 elapsed=10714.9s
+resnet20 epoch 41/100 step 100/391 loss=0.2873 lr=0.1000 elapsed=10730.5s
+resnet20 epoch 41/100 step 200/391 loss=0.2233 lr=0.1000 elapsed=10744.0s
+resnet20 epoch 41/100 step 300/391 loss=0.2496 lr=0.1000 elapsed=10784.7s
+resnet20 epoch 41 done: train_loss=0.2772 test_acc=0.8514 elapsed=10795.9s
+resnet20 epoch 42/100 step 0/391 loss=0.3133 lr=0.1000 elapsed=10796.0s
+resnet20 epoch 42/100 step 100/391 loss=0.3076 lr=0.1000 elapsed=10809.9s
+resnet20 epoch 42/100 step 200/391 loss=0.4003 lr=0.1000 elapsed=10823.0s
+resnet20 epoch 42/100 step 300/391 loss=0.4178 lr=0.1000 elapsed=10835.7s
+resnet20 epoch 42 done: train_loss=0.2796 test_acc=0.8538 elapsed=10982.9s
+resnet20 epoch 43/100 step 0/391 loss=0.2662 lr=0.1000 elapsed=10983.1s
+resnet20 epoch 43/100 step 100/391 loss=0.1998 lr=0.1000 elapsed=10996.1s
+resnet20 epoch 43/100 step 200/391 loss=0.2847 lr=0.1000 elapsed=11004.3s
+resnet20 epoch 43/100 step 300/391 loss=0.2247 lr=0.1000 elapsed=11020.3s
+resnet20 epoch 43 done: train_loss=0.2772 test_acc=0.8589 elapsed=11038.7s
+resnet20 epoch 44/100 step 0/391 loss=0.2993 lr=0.1000 elapsed=11039.2s
+resnet20 epoch 44/100 step 100/391 loss=0.2094 lr=0.1000 elapsed=11057.2s
+resnet20 epoch 44/100 step 200/391 loss=0.2832 lr=0.1000 elapsed=11069.6s
+resnet20 epoch 44/100 step 300/391 loss=0.1933 lr=0.1000 elapsed=11693.0s
+resnet20 epoch 44 done: train_loss=0.2734 test_acc=0.8396 elapsed=11709.8s
+resnet20 epoch 45/100 step 0/391 loss=0.1965 lr=0.1000 elapsed=11710.0s
+resnet20 epoch 45/100 step 100/391 loss=0.2838 lr=0.1000 elapsed=11724.7s
+resnet20 epoch 45/100 step 200/391 loss=0.2513 lr=0.1000 elapsed=12209.6s
+resnet20 epoch 45/100 step 300/391 loss=0.3020 lr=0.1000 elapsed=12248.4s
+resnet20 epoch 45 done: train_loss=0.2691 test_acc=0.8456 elapsed=12432.6s
+resnet20 epoch 46/100 step 0/391 loss=0.2658 lr=0.1000 elapsed=12432.7s
+resnet20 epoch 46/100 step 100/391 loss=0.2862 lr=0.1000 elapsed=12447.7s
+resnet20 epoch 46/100 step 200/391 loss=0.3454 lr=0.1000 elapsed=12462.5s
+resnet20 epoch 46/100 step 300/391 loss=0.2789 lr=0.1000 elapsed=12495.4s
+resnet20 epoch 46 done: train_loss=0.2724 test_acc=0.8649 elapsed=12511.7s
+resnet20 epoch 47/100 step 0/391 loss=0.1879 lr=0.1000 elapsed=12512.4s
+resnet20 epoch 47/100 step 100/391 loss=0.3148 lr=0.1000 elapsed=12528.0s
+resnet20 epoch 47/100 step 200/391 loss=0.2257 lr=0.1000 elapsed=12553.6s
+resnet20 epoch 47/100 step 300/391 loss=0.2394 lr=0.1000 elapsed=12572.0s
+resnet20 epoch 47 done: train_loss=0.2691 test_acc=0.8459 elapsed=12591.1s
+resnet20 epoch 48/100 step 0/391 loss=0.3196 lr=0.1000 elapsed=12591.8s
+resnet20 epoch 48/100 step 100/391 loss=0.3757 lr=0.1000 elapsed=12616.1s
+resnet20 epoch 48/100 step 200/391 loss=0.2374 lr=0.1000 elapsed=12635.2s
+resnet20 epoch 48/100 step 300/391 loss=0.2137 lr=0.1000 elapsed=12653.1s
+resnet20 epoch 48 done: train_loss=0.2678 test_acc=0.8517 elapsed=12670.7s
+resnet20 epoch 49/100 step 0/391 loss=0.2438 lr=0.1000 elapsed=12671.0s
+resnet20 epoch 49/100 step 100/391 loss=0.1835 lr=0.1000 elapsed=12687.1s
+resnet20 epoch 49/100 step 200/391 loss=0.2283 lr=0.1000 elapsed=12729.3s
+resnet20 epoch 49/100 step 300/391 loss=0.1670 lr=0.1000 elapsed=12739.4s
+resnet20 epoch 49 done: train_loss=0.2632 test_acc=0.8554 elapsed=12876.3s
+resnet20 epoch 50/100 step 0/391 loss=0.2437 lr=0.1000 elapsed=12876.4s
+resnet20 epoch 50/100 step 100/391 loss=0.2558 lr=0.1000 elapsed=12892.4s
+resnet20 epoch 50/100 step 200/391 loss=0.1396 lr=0.1000 elapsed=12906.1s
+resnet20 epoch 50/100 step 300/391 loss=0.2234 lr=0.1000 elapsed=13010.8s
+resnet20 epoch 50 done: train_loss=0.2577 test_acc=0.8625 elapsed=13425.7s
+resnet20 epoch 51/100 step 0/391 loss=0.2436 lr=0.0100 elapsed=13425.8s
+resnet20 epoch 51/100 step 100/391 loss=0.1341 lr=0.0100 elapsed=13441.4s
+resnet20 epoch 51/100 step 200/391 loss=0.1489 lr=0.0100 elapsed=13457.3s
+resnet20 epoch 51/100 step 300/391 loss=0.1375 lr=0.0100 elapsed=13936.5s
+resnet20 epoch 51 done: train_loss=0.1778 test_acc=0.9007 elapsed=13955.1s
+resnet20 epoch 52/100 step 0/391 loss=0.1459 lr=0.0100 elapsed=13956.4s
+resnet20 epoch 52/100 step 100/391 loss=0.1642 lr=0.0100 elapsed=13977.2s
+resnet20 epoch 52/100 step 200/391 loss=0.2094 lr=0.0100 elapsed=13996.2s
+resnet20 epoch 52/100 step 300/391 loss=0.2050 lr=0.0100 elapsed=14501.5s
+resnet20 epoch 52 done: train_loss=0.1440 test_acc=0.9049 elapsed=14520.7s
+resnet20 epoch 53/100 step 0/391 loss=0.1980 lr=0.0100 elapsed=14521.1s
+resnet20 epoch 53/100 step 100/391 loss=0.0933 lr=0.0100 elapsed=14537.8s
+resnet20 epoch 53/100 step 200/391 loss=0.1381 lr=0.0100 elapsed=15023.7s
+resnet20 epoch 53/100 step 300/391 loss=0.1069 lr=0.0100 elapsed=15034.0s
+resnet20 epoch 53 done: train_loss=0.1357 test_acc=0.9031 elapsed=15050.9s
+resnet20 epoch 54/100 step 0/391 loss=0.0845 lr=0.0100 elapsed=15051.3s
+resnet20 epoch 54/100 step 100/391 loss=0.0917 lr=0.0100 elapsed=15065.6s
+resnet20 epoch 54/100 step 200/391 loss=0.1554 lr=0.0100 elapsed=15080.4s
+resnet20 epoch 54/100 step 300/391 loss=0.1054 lr=0.0100 elapsed=15094.6s
+resnet20 epoch 54 done: train_loss=0.1277 test_acc=0.9050 elapsed=15110.2s
+resnet20 epoch 55/100 step 0/391 loss=0.0813 lr=0.0100 elapsed=15110.7s
+resnet20 epoch 55/100 step 100/391 loss=0.0952 lr=0.0100 elapsed=15124.7s
+resnet20 epoch 55/100 step 200/391 loss=0.0997 lr=0.0100 elapsed=15137.1s
+resnet20 epoch 55/100 step 300/391 loss=0.0743 lr=0.0100 elapsed=15149.3s
+resnet20 epoch 55 done: train_loss=0.1226 test_acc=0.9059 elapsed=15158.1s
+resnet20 epoch 56/100 step 0/391 loss=0.0903 lr=0.0100 elapsed=15158.2s
+resnet20 epoch 56/100 step 100/391 loss=0.0346 lr=0.0100 elapsed=15165.5s
+resnet20 epoch 56/100 step 200/391 loss=0.0932 lr=0.0100 elapsed=15172.8s
+resnet20 epoch 56/100 step 300/391 loss=0.1269 lr=0.0100 elapsed=15180.2s
+resnet20 epoch 56 done: train_loss=0.1155 test_acc=0.9072 elapsed=15188.7s
+resnet20 epoch 57/100 step 0/391 loss=0.0996 lr=0.0100 elapsed=15188.8s
+resnet20 epoch 57/100 step 100/391 loss=0.0875 lr=0.0100 elapsed=15349.9s
+resnet20 epoch 57/100 step 200/391 loss=0.1184 lr=0.0100 elapsed=16056.0s
+resnet20 epoch 57/100 step 300/391 loss=0.1250 lr=0.0100 elapsed=17140.3s
+resnet20 epoch 57 done: train_loss=0.1116 test_acc=0.9059 elapsed=17633.2s
+resnet20 epoch 58/100 step 0/391 loss=0.0532 lr=0.0100 elapsed=17633.8s
+resnet20 epoch 58/100 step 100/391 loss=0.0993 lr=0.0100 elapsed=17657.1s
+resnet20 epoch 58/100 step 200/391 loss=0.1196 lr=0.0100 elapsed=18692.0s
+resnet20 epoch 58/100 step 300/391 loss=0.0594 lr=0.0100 elapsed=18708.7s
+resnet20 epoch 58 done: train_loss=0.1072 test_acc=0.9076 elapsed=18726.9s
+resnet20 epoch 59/100 step 0/391 loss=0.1242 lr=0.0100 elapsed=18727.2s
+resnet20 epoch 59/100 step 100/391 loss=0.0918 lr=0.0100 elapsed=20050.3s
+resnet20 epoch 59/100 step 200/391 loss=0.1386 lr=0.0100 elapsed=20064.3s
+resnet20 epoch 59/100 step 300/391 loss=0.0722 lr=0.0100 elapsed=20079.7s
+resnet20 epoch 59 done: train_loss=0.1065 test_acc=0.9065 elapsed=20864.9s
+resnet20 epoch 60/100 step 0/391 loss=0.0722 lr=0.0100 elapsed=20865.2s
+resnet20 epoch 60/100 step 100/391 loss=0.0731 lr=0.0100 elapsed=20879.5s
+resnet20 epoch 60/100 step 200/391 loss=0.1122 lr=0.0100 elapsed=20892.6s
+resnet20 epoch 60/100 step 300/391 loss=0.1006 lr=0.0100 elapsed=20905.6s
+resnet20 epoch 60 done: train_loss=0.1026 test_acc=0.9069 elapsed=22745.3s
+resnet20 epoch 61/100 step 0/391 loss=0.1373 lr=0.0100 elapsed=22745.4s
+resnet20 epoch 61/100 step 100/391 loss=0.0582 lr=0.0100 elapsed=24737.2s
+resnet20 epoch 61/100 step 200/391 loss=0.0934 lr=0.0100 elapsed=26651.0s
+resnet20 epoch 61/100 step 300/391 loss=0.0574 lr=0.0100 elapsed=28319.3s
+resnet20 epoch 61 done: train_loss=0.0996 test_acc=0.9064 elapsed=29107.6s
+resnet20 epoch 62/100 step 0/391 loss=0.1113 lr=0.0100 elapsed=29107.9s
+resnet20 epoch 62/100 step 100/391 loss=0.1525 lr=0.0100 elapsed=29123.6s
+resnet20 epoch 62/100 step 200/391 loss=0.0721 lr=0.0100 elapsed=29136.6s
+resnet20 epoch 62/100 step 300/391 loss=0.0917 lr=0.0100 elapsed=30122.8s
+resnet20 epoch 62 done: train_loss=0.0960 test_acc=0.9052 elapsed=32065.2s
+resnet20 epoch 63/100 step 0/391 loss=0.0584 lr=0.0100 elapsed=32065.3s
+resnet20 epoch 63/100 step 100/391 loss=0.1958 lr=0.0100 elapsed=34104.4s
+resnet20 epoch 63/100 step 200/391 loss=0.0497 lr=0.0100 elapsed=34718.9s
+resnet20 epoch 63/100 step 300/391 loss=0.0974 lr=0.0100 elapsed=34736.4s
+resnet20 epoch 63 done: train_loss=0.0944 test_acc=0.9055 elapsed=34753.6s
+resnet20 epoch 64/100 step 0/391 loss=0.0859 lr=0.0100 elapsed=34753.9s
+resnet20 epoch 64/100 step 100/391 loss=0.0805 lr=0.0100 elapsed=35912.8s
+resnet20 epoch 64/100 step 200/391 loss=0.0797 lr=0.0100 elapsed=35926.1s
+resnet20 epoch 64/100 step 300/391 loss=0.0758 lr=0.0100 elapsed=35940.3s
+resnet20 epoch 64 done: train_loss=0.0900 test_acc=0.9050 elapsed=35954.3s
+resnet20 epoch 65/100 step 0/391 loss=0.0487 lr=0.0100 elapsed=35954.5s
+resnet20 epoch 65/100 step 100/391 loss=0.1083 lr=0.0100 elapsed=36373.4s
+resnet20 epoch 65/100 step 200/391 loss=0.0339 lr=0.0100 elapsed=36386.1s
+resnet20 epoch 65/100 step 300/391 loss=0.0991 lr=0.0100 elapsed=36402.0s
+resnet20 epoch 65 done: train_loss=0.0903 test_acc=0.9077 elapsed=38404.8s
+resnet20 epoch 66/100 step 0/391 loss=0.0911 lr=0.0100 elapsed=38405.1s
+resnet20 epoch 66/100 step 100/391 loss=0.1181 lr=0.0100 elapsed=40024.7s
+resnet20 epoch 66/100 step 200/391 loss=0.1447 lr=0.0100 elapsed=40038.0s
+resnet20 epoch 66/100 step 300/391 loss=0.0338 lr=0.0100 elapsed=40052.2s
+resnet20 epoch 66 done: train_loss=0.0880 test_acc=0.9088 elapsed=40066.6s
+resnet20 epoch 67/100 step 0/391 loss=0.1650 lr=0.0100 elapsed=40067.1s
+resnet20 epoch 67/100 step 100/391 loss=0.0456 lr=0.0100 elapsed=41951.7s
+resnet20 epoch 67/100 step 200/391 loss=0.1346 lr=0.0100 elapsed=43691.5s
+resnet20 epoch 67/100 step 300/391 loss=0.0982 lr=0.0100 elapsed=43710.6s
+resnet20 epoch 67 done: train_loss=0.0860 test_acc=0.9045 elapsed=44708.1s
+resnet20 epoch 68/100 step 0/391 loss=0.0885 lr=0.0100 elapsed=44708.5s
+resnet20 epoch 68/100 step 100/391 loss=0.1093 lr=0.0100 elapsed=45930.7s
+resnet20 epoch 68/100 step 200/391 loss=0.0631 lr=0.0100 elapsed=45944.5s
+resnet20 epoch 68/100 step 300/391 loss=0.0482 lr=0.0100 elapsed=45960.5s
+resnet20 epoch 68 done: train_loss=0.0830 test_acc=0.9048 elapsed=46349.2s
+resnet20 epoch 69/100 step 0/391 loss=0.0721 lr=0.0100 elapsed=46349.3s
+resnet20 epoch 69/100 step 100/391 loss=0.1082 lr=0.0100 elapsed=46363.1s
+resnet20 epoch 69/100 step 200/391 loss=0.0347 lr=0.0100 elapsed=46376.9s
+resnet20 epoch 69/100 step 300/391 loss=0.1125 lr=0.0100 elapsed=156596.0s
+resnet20 epoch 69 done: train_loss=0.0837 test_acc=0.9077 elapsed=156622.9s
+resnet20 epoch 70/100 step 0/391 loss=0.0593 lr=0.0100 elapsed=156629.2s
+resnet20 epoch 70/100 step 100/391 loss=0.0511 lr=0.0100 elapsed=156656.1s
+resnet20 epoch 70/100 step 200/391 loss=0.0467 lr=0.0100 elapsed=156675.0s
+resnet20 epoch 70/100 step 300/391 loss=0.0709 lr=0.0100 elapsed=156690.1s
+resnet20 epoch 70 done: train_loss=0.0803 test_acc=0.9098 elapsed=156711.2s
+resnet20 epoch 71/100 step 0/391 loss=0.0578 lr=0.0100 elapsed=156712.4s
+resnet20 epoch 71/100 step 100/391 loss=0.0713 lr=0.0100 elapsed=156729.1s
+resnet20 epoch 71/100 step 200/391 loss=0.0963 lr=0.0100 elapsed=156744.7s
+resnet20 epoch 71/100 step 300/391 loss=0.1024 lr=0.0100 elapsed=156760.8s
+resnet20 epoch 71 done: train_loss=0.0798 test_acc=0.9050 elapsed=156774.9s
+resnet20 epoch 72/100 step 0/391 loss=0.1104 lr=0.0100 elapsed=156775.1s
+resnet20 epoch 72/100 step 100/391 loss=0.1307 lr=0.0100 elapsed=156785.3s
+resnet20 epoch 72/100 step 200/391 loss=0.0654 lr=0.0100 elapsed=156796.2s
+resnet20 epoch 72/100 step 300/391 loss=0.0818 lr=0.0100 elapsed=156807.7s
+resnet20 epoch 72 done: train_loss=0.0773 test_acc=0.9096 elapsed=156819.2s
+resnet20 epoch 73/100 step 0/391 loss=0.0551 lr=0.0100 elapsed=156819.4s
+resnet20 epoch 73/100 step 100/391 loss=0.0352 lr=0.0100 elapsed=156827.8s
+resnet20 epoch 73/100 step 200/391 loss=0.1036 lr=0.0100 elapsed=156836.0s
+resnet20 epoch 73/100 step 300/391 loss=0.0211 lr=0.0100 elapsed=156843.7s
+resnet20 epoch 73 done: train_loss=0.0773 test_acc=0.9091 elapsed=156852.6s
+resnet20 epoch 74/100 step 0/391 loss=0.0873 lr=0.0100 elapsed=156852.7s
+resnet20 epoch 74/100 step 100/391 loss=0.0707 lr=0.0100 elapsed=156860.8s
+resnet20 epoch 74/100 step 200/391 loss=0.0492 lr=0.0100 elapsed=156868.7s
+resnet20 epoch 74/100 step 300/391 loss=0.0510 lr=0.0100 elapsed=156877.4s
+resnet20 epoch 74 done: train_loss=0.0726 test_acc=0.9050 elapsed=156887.1s
+resnet20 epoch 75/100 step 0/391 loss=0.0632 lr=0.0100 elapsed=156887.3s
+resnet20 epoch 75/100 step 100/391 loss=0.0644 lr=0.0100 elapsed=156895.3s
+resnet20 epoch 75/100 step 200/391 loss=0.0682 lr=0.0100 elapsed=156904.4s
+resnet20 epoch 75/100 step 300/391 loss=0.0956 lr=0.0100 elapsed=156912.6s
+resnet20 epoch 75 done: train_loss=0.0724 test_acc=0.9073 elapsed=156921.6s
+resnet20 epoch 76/100 step 0/391 loss=0.0362 lr=0.0010 elapsed=156921.8s
+resnet20 epoch 76/100 step 100/391 loss=0.0475 lr=0.0010 elapsed=156930.7s
+resnet20 epoch 76/100 step 200/391 loss=0.1062 lr=0.0010 elapsed=156939.6s
+resnet20 epoch 76/100 step 300/391 loss=0.1069 lr=0.0010 elapsed=156948.4s
+resnet20 epoch 76 done: train_loss=0.0656 test_acc=0.9097 elapsed=156958.6s
+resnet20 epoch 77/100 step 0/391 loss=0.0405 lr=0.0010 elapsed=156959.6s
+resnet20 epoch 77/100 step 100/391 loss=0.0731 lr=0.0010 elapsed=156967.3s
+resnet20 epoch 77/100 step 200/391 loss=0.0768 lr=0.0010 elapsed=156975.0s
+resnet20 epoch 77/100 step 300/391 loss=0.0662 lr=0.0010 elapsed=156982.7s
+resnet20 epoch 77 done: train_loss=0.0625 test_acc=0.9098 elapsed=156991.5s
+resnet20 epoch 78/100 step 0/391 loss=0.0322 lr=0.0010 elapsed=156991.6s
+resnet20 epoch 78/100 step 100/391 loss=0.0622 lr=0.0010 elapsed=156999.5s
+resnet20 epoch 78/100 step 200/391 loss=0.0586 lr=0.0010 elapsed=157007.4s
+resnet20 epoch 78/100 step 300/391 loss=0.0365 lr=0.0010 elapsed=157015.2s
+resnet20 epoch 78 done: train_loss=0.0622 test_acc=0.9114 elapsed=157024.0s
+resnet20 epoch 79/100 step 0/391 loss=0.0609 lr=0.0010 elapsed=157024.1s
+resnet20 epoch 79/100 step 100/391 loss=0.0300 lr=0.0010 elapsed=157032.0s
+resnet20 epoch 79/100 step 200/391 loss=0.0623 lr=0.0010 elapsed=157039.8s
+resnet20 epoch 79/100 step 300/391 loss=0.0534 lr=0.0010 elapsed=157047.8s
+resnet20 epoch 79 done: train_loss=0.0586 test_acc=0.9118 elapsed=157056.7s
+resnet20 epoch 80/100 step 0/391 loss=0.0281 lr=0.0010 elapsed=157056.9s
+resnet20 epoch 80/100 step 100/391 loss=0.0616 lr=0.0010 elapsed=157064.9s
+resnet20 epoch 80/100 step 200/391 loss=0.0447 lr=0.0010 elapsed=157072.6s
+resnet20 epoch 80/100 step 300/391 loss=0.0277 lr=0.0010 elapsed=157080.4s
+resnet20 epoch 80 done: train_loss=0.0571 test_acc=0.9120 elapsed=157089.7s
+resnet20 epoch 81/100 step 0/391 loss=0.0561 lr=0.0010 elapsed=157090.0s
+resnet20 epoch 81/100 step 100/391 loss=0.0480 lr=0.0010 elapsed=157100.4s
+resnet20 epoch 81/100 step 200/391 loss=0.0689 lr=0.0010 elapsed=157108.6s
+resnet20 epoch 81/100 step 300/391 loss=0.0976 lr=0.0010 elapsed=157116.8s
+resnet20 epoch 81 done: train_loss=0.0597 test_acc=0.9110 elapsed=157126.7s
+resnet20 epoch 82/100 step 0/391 loss=0.0384 lr=0.0010 elapsed=157126.8s
+resnet20 epoch 82/100 step 100/391 loss=0.0850 lr=0.0010 elapsed=157135.1s
+resnet20 epoch 82/100 step 200/391 loss=0.0811 lr=0.0010 elapsed=157144.6s
+resnet20 epoch 82/100 step 300/391 loss=0.0583 lr=0.0010 elapsed=157154.0s
+resnet20 epoch 82 done: train_loss=0.0587 test_acc=0.9124 elapsed=157164.2s
+resnet20 epoch 83/100 step 0/391 loss=0.0335 lr=0.0010 elapsed=157164.4s
+resnet20 epoch 83/100 step 100/391 loss=0.1004 lr=0.0010 elapsed=157172.6s
+resnet20 epoch 83/100 step 200/391 loss=0.0387 lr=0.0010 elapsed=157180.3s
+resnet20 epoch 83/100 step 300/391 loss=0.0296 lr=0.0010 elapsed=157188.5s
+resnet20 epoch 83 done: train_loss=0.0575 test_acc=0.9120 elapsed=157197.7s
+resnet20 epoch 84/100 step 0/391 loss=0.0759 lr=0.0010 elapsed=157197.9s
+resnet20 epoch 84/100 step 100/391 loss=0.0704 lr=0.0010 elapsed=157205.9s
+resnet20 epoch 84/100 step 200/391 loss=0.0715 lr=0.0010 elapsed=157215.5s
+resnet20 epoch 84/100 step 300/391 loss=0.0814 lr=0.0010 elapsed=157224.5s
+resnet20 epoch 84 done: train_loss=0.0578 test_acc=0.9125 elapsed=157237.2s
+resnet20 epoch 85/100 step 0/391 loss=0.0816 lr=0.0010 elapsed=157237.8s
+resnet20 epoch 85/100 step 100/391 loss=0.0819 lr=0.0010 elapsed=157249.1s
+resnet20 epoch 85/100 step 200/391 loss=0.0582 lr=0.0010 elapsed=157259.2s
+resnet20 epoch 85/100 step 300/391 loss=0.0313 lr=0.0010 elapsed=157267.7s
+resnet20 epoch 85 done: train_loss=0.0581 test_acc=0.9126 elapsed=157277.8s
+resnet20 epoch 86/100 step 0/391 loss=0.0458 lr=0.0010 elapsed=157278.0s
+resnet20 epoch 86/100 step 100/391 loss=0.0465 lr=0.0010 elapsed=157286.3s
+resnet20 epoch 86/100 step 200/391 loss=0.0194 lr=0.0010 elapsed=157296.4s
+resnet20 epoch 86/100 step 300/391 loss=0.0595 lr=0.0010 elapsed=157308.4s
+resnet20 epoch 86 done: train_loss=0.0563 test_acc=0.9127 elapsed=157320.7s
+resnet20 epoch 87/100 step 0/391 loss=0.0860 lr=0.0010 elapsed=157320.9s
+resnet20 epoch 87/100 step 100/391 loss=0.0200 lr=0.0010 elapsed=157329.2s
+resnet20 epoch 87/100 step 200/391 loss=0.0830 lr=0.0010 elapsed=157341.7s
+resnet20 epoch 87/100 step 300/391 loss=0.0774 lr=0.0010 elapsed=157350.5s
+resnet20 epoch 87 done: train_loss=0.0557 test_acc=0.9117 elapsed=157360.6s
+resnet20 epoch 88/100 step 0/391 loss=0.0411 lr=0.0010 elapsed=157360.8s
+resnet20 epoch 88/100 step 100/391 loss=0.0770 lr=0.0010 elapsed=157368.8s
+resnet20 epoch 88/100 step 200/391 loss=0.0823 lr=0.0010 elapsed=157376.5s
+resnet20 epoch 88/100 step 300/391 loss=0.0671 lr=0.0010 elapsed=157384.4s
+resnet20 epoch 88 done: train_loss=0.0571 test_acc=0.9115 elapsed=157393.3s
+resnet20 epoch 89/100 step 0/391 loss=0.0954 lr=0.0010 elapsed=157393.4s
+resnet20 epoch 89/100 step 100/391 loss=0.0467 lr=0.0010 elapsed=157401.7s
+resnet20 epoch 89/100 step 200/391 loss=0.0671 lr=0.0010 elapsed=157409.4s
+resnet20 epoch 89/100 step 300/391 loss=0.0963 lr=0.0010 elapsed=157417.1s
+resnet20 epoch 89 done: train_loss=0.0558 test_acc=0.9133 elapsed=157425.7s
+resnet20 epoch 90/100 step 0/391 loss=0.0201 lr=0.0010 elapsed=157425.8s
+resnet20 epoch 90/100 step 100/391 loss=0.0372 lr=0.0010 elapsed=157433.3s
+resnet20 epoch 90/100 step 200/391 loss=0.0581 lr=0.0010 elapsed=157441.0s
+resnet20 epoch 90/100 step 300/391 loss=0.0508 lr=0.0010 elapsed=157448.7s
+resnet20 epoch 90 done: train_loss=0.0557 test_acc=0.9114 elapsed=157457.2s
+resnet20 epoch 91/100 step 0/391 loss=0.0884 lr=0.0010 elapsed=157457.3s
+resnet20 epoch 91/100 step 100/391 loss=0.1020 lr=0.0010 elapsed=157464.8s
+resnet20 epoch 91/100 step 200/391 loss=0.0330 lr=0.0010 elapsed=157472.4s
+resnet20 epoch 91/100 step 300/391 loss=0.0572 lr=0.0010 elapsed=157479.9s
+resnet20 epoch 91 done: train_loss=0.0549 test_acc=0.9121 elapsed=157488.6s
+resnet20 epoch 92/100 step 0/391 loss=0.0482 lr=0.0010 elapsed=157488.7s
+resnet20 epoch 92/100 step 100/391 loss=0.0322 lr=0.0010 elapsed=157496.9s
+resnet20 epoch 92/100 step 200/391 loss=0.0519 lr=0.0010 elapsed=157504.9s
+resnet20 epoch 92/100 step 300/391 loss=0.0452 lr=0.0010 elapsed=157514.3s
+resnet20 epoch 92 done: train_loss=0.0549 test_acc=0.9131 elapsed=157523.2s
+resnet20 epoch 93/100 step 0/391 loss=0.0586 lr=0.0010 elapsed=157523.3s
+resnet20 epoch 93/100 step 100/391 loss=0.0694 lr=0.0010 elapsed=157531.3s
+resnet20 epoch 93/100 step 200/391 loss=0.0542 lr=0.0010 elapsed=157541.2s
+resnet20 epoch 93/100 step 300/391 loss=0.0720 lr=0.0010 elapsed=157549.4s
+resnet20 epoch 93 done: train_loss=0.0547 test_acc=0.9119 elapsed=157561.0s
+resnet20 epoch 94/100 step 0/391 loss=0.0343 lr=0.0010 elapsed=157561.2s
+resnet20 epoch 94/100 step 100/391 loss=0.0392 lr=0.0010 elapsed=157571.4s
+resnet20 epoch 94/100 step 200/391 loss=0.0643 lr=0.0010 elapsed=157579.9s
+resnet20 epoch 94/100 step 300/391 loss=0.0568 lr=0.0010 elapsed=157589.7s
+resnet20 epoch 94 done: train_loss=0.0536 test_acc=0.9122 elapsed=157598.9s
+resnet20 epoch 95/100 step 0/391 loss=0.0661 lr=0.0010 elapsed=157599.0s
+resnet20 epoch 95/100 step 100/391 loss=0.0382 lr=0.0010 elapsed=157606.9s
+resnet20 epoch 95/100 step 200/391 loss=0.0291 lr=0.0010 elapsed=157614.9s
+resnet20 epoch 95/100 step 300/391 loss=0.0947 lr=0.0010 elapsed=157622.9s
+resnet20 epoch 95 done: train_loss=0.0558 test_acc=0.9132 elapsed=157631.7s
+resnet20 epoch 96/100 step 0/391 loss=0.0511 lr=0.0010 elapsed=157631.8s
+resnet20 epoch 96/100 step 100/391 loss=0.0463 lr=0.0010 elapsed=157640.0s
+resnet20 epoch 96/100 step 200/391 loss=0.0218 lr=0.0010 elapsed=157648.3s
+resnet20 epoch 96/100 step 300/391 loss=0.0352 lr=0.0010 elapsed=157656.6s
+resnet20 epoch 96 done: train_loss=0.0549 test_acc=0.9118 elapsed=157666.0s
+resnet20 epoch 97/100 step 0/391 loss=0.0993 lr=0.0010 elapsed=157666.1s
+resnet20 epoch 97/100 step 100/391 loss=0.1009 lr=0.0010 elapsed=157674.3s
+resnet20 epoch 97/100 step 200/391 loss=0.0824 lr=0.0010 elapsed=157682.2s
+resnet20 epoch 97/100 step 300/391 loss=0.0899 lr=0.0010 elapsed=157690.0s
+resnet20 epoch 97 done: train_loss=0.0543 test_acc=0.9114 elapsed=157699.0s
+resnet20 epoch 98/100 step 0/391 loss=0.0572 lr=0.0010 elapsed=157699.3s
+resnet20 epoch 98/100 step 100/391 loss=0.0841 lr=0.0010 elapsed=157707.6s
+resnet20 epoch 98/100 step 200/391 loss=0.0287 lr=0.0010 elapsed=157715.5s
+resnet20 epoch 98/100 step 300/391 loss=0.0709 lr=0.0010 elapsed=157725.9s
+resnet20 epoch 98 done: train_loss=0.0531 test_acc=0.9124 elapsed=157737.5s
+resnet20 epoch 99/100 step 0/391 loss=0.0568 lr=0.0010 elapsed=157737.7s
+resnet20 epoch 99/100 step 100/391 loss=0.0394 lr=0.0010 elapsed=157745.6s
+resnet20 epoch 99/100 step 200/391 loss=0.0625 lr=0.0010 elapsed=157753.7s
+resnet20 epoch 99/100 step 300/391 loss=0.0397 lr=0.0010 elapsed=157762.4s
+resnet20 epoch 99 done: train_loss=0.0529 test_acc=0.9123 elapsed=157773.2s
+resnet20 epoch 100/100 step 0/391 loss=0.0245 lr=0.0010 elapsed=157773.4s
+resnet20 epoch 100/100 step 100/391 loss=0.0241 lr=0.0010 elapsed=157785.7s
+resnet20 epoch 100/100 step 200/391 loss=0.1178 lr=0.0010 elapsed=157794.1s
+resnet20 epoch 100/100 step 300/391 loss=0.1143 lr=0.0010 elapsed=157806.1s
+resnet20 epoch 100 done: train_loss=0.0527 test_acc=0.9123 elapsed=157819.3s
+resnet20: writing SNR CSV with 742900 rows -> /Users/jaz/Gradient-Flow-Dynamics-in-Deep-CNNs/results/snr_resnet20.csv
+resnet20: rendering heatmap -> /Users/jaz/Gradient-Flow-Dynamics-in-Deep-CNNs/results/snr_heatmap_resnet20.png
+=== resnet20: done in 157823.2s ===
+
+=== resnet56: building model and loaders ===
+resnet56: 0.853M params, 55 Conv2d layers
+resnet56 epoch 1/100 step 0/391 loss=6.1173 lr=0.1000 elapsed=10.5s
+resnet56 epoch 1/100 step 100/391 loss=2.2385 lr=0.1000 elapsed=44.0s
+resnet56 epoch 1/100 step 200/391 loss=2.1646 lr=0.1000 elapsed=75.4s
+resnet56 epoch 1/100 step 300/391 loss=1.9863 lr=0.1000 elapsed=117.1s
+resnet56 epoch 1 done: train_loss=2.3190 test_acc=0.2658 elapsed=163.3s
+resnet56 epoch 2/100 step 0/391 loss=1.9571 lr=0.1000 elapsed=164.5s
+resnet56 epoch 2/100 step 100/391 loss=1.8646 lr=0.1000 elapsed=202.5s
+resnet56 epoch 2/100 step 200/391 loss=1.5681 lr=0.1000 elapsed=240.3s
+resnet56 epoch 2/100 step 300/391 loss=1.5510 lr=0.1000 elapsed=304.1s
+resnet56 epoch 2 done: train_loss=1.7205 test_acc=0.4096 elapsed=367.8s
+resnet56 epoch 3/100 step 0/391 loss=1.5340 lr=0.1000 elapsed=369.3s
+resnet56 epoch 3/100 step 100/391 loss=1.3995 lr=0.1000 elapsed=411.6s
+resnet56 epoch 3/100 step 200/391 loss=1.4014 lr=0.1000 elapsed=442.5s
+resnet56 epoch 3/100 step 300/391 loss=1.3235 lr=0.1000 elapsed=471.0s
+resnet56 epoch 3 done: train_loss=1.4657 test_acc=0.4107 elapsed=501.2s
+resnet56 epoch 4/100 step 0/391 loss=1.4018 lr=0.1000 elapsed=501.5s
+resnet56 epoch 4/100 step 100/391 loss=1.0610 lr=0.1000 elapsed=531.4s
+resnet56 epoch 4/100 step 200/391 loss=1.2765 lr=0.1000 elapsed=562.9s
+resnet56 epoch 4/100 step 300/391 loss=1.1556 lr=0.1000 elapsed=594.1s
+resnet56 epoch 4 done: train_loss=1.3071 test_acc=0.5464 elapsed=623.2s
+resnet56 epoch 5/100 step 0/391 loss=1.2369 lr=0.1000 elapsed=623.4s
+resnet56 epoch 5/100 step 100/391 loss=1.2473 lr=0.1000 elapsed=651.8s
+resnet56 epoch 5/100 step 200/391 loss=1.2642 lr=0.1000 elapsed=680.5s
+resnet56 epoch 5/100 step 300/391 loss=1.0353 lr=0.1000 elapsed=708.8s
+resnet56 epoch 5 done: train_loss=1.1755 test_acc=0.5937 elapsed=738.5s
+resnet56 epoch 6/100 step 0/391 loss=1.1167 lr=0.1000 elapsed=738.8s
+resnet56 epoch 6/100 step 100/391 loss=1.0840 lr=0.1000 elapsed=768.4s
+resnet56 epoch 6/100 step 200/391 loss=1.2391 lr=0.1000 elapsed=797.4s
+resnet56 epoch 6/100 step 300/391 loss=0.9081 lr=0.1000 elapsed=828.3s
+resnet56 epoch 6 done: train_loss=1.0487 test_acc=0.5984 elapsed=860.8s
+resnet56 epoch 7/100 step 0/391 loss=1.0176 lr=0.1000 elapsed=861.1s
+resnet56 epoch 7/100 step 100/391 loss=0.9092 lr=0.1000 elapsed=890.3s
+resnet56 epoch 7/100 step 200/391 loss=1.0412 lr=0.1000 elapsed=916.9s
+resnet56 epoch 7/100 step 300/391 loss=0.9316 lr=0.1000 elapsed=944.4s
+resnet56 epoch 7 done: train_loss=0.9468 test_acc=0.6731 elapsed=974.0s
+resnet56 epoch 8/100 step 0/391 loss=0.7906 lr=0.1000 elapsed=974.3s
+resnet56 epoch 8/100 step 100/391 loss=0.7545 lr=0.1000 elapsed=999.0s
+resnet56 epoch 8/100 step 200/391 loss=0.7384 lr=0.1000 elapsed=1025.0s
+resnet56 epoch 8/100 step 300/391 loss=0.8436 lr=0.1000 elapsed=1050.9s
+resnet56 epoch 8 done: train_loss=0.8553 test_acc=0.6618 elapsed=1079.7s
+resnet56 epoch 9/100 step 0/391 loss=0.8420 lr=0.1000 elapsed=1080.0s
+resnet56 epoch 9/100 step 100/391 loss=0.8903 lr=0.1000 elapsed=1107.0s
+resnet56 epoch 9/100 step 200/391 loss=0.9405 lr=0.1000 elapsed=1135.3s
+resnet56 epoch 9/100 step 300/391 loss=0.6805 lr=0.1000 elapsed=1163.1s
+resnet56 epoch 9 done: train_loss=0.7827 test_acc=0.6752 elapsed=1191.7s
+resnet56 epoch 10/100 step 0/391 loss=0.8128 lr=0.1000 elapsed=1192.0s
+resnet56 epoch 10/100 step 100/391 loss=0.7323 lr=0.1000 elapsed=1219.6s
+resnet56 epoch 10/100 step 200/391 loss=0.5861 lr=0.1000 elapsed=1247.0s
+resnet56 epoch 10/100 step 300/391 loss=0.7020 lr=0.1000 elapsed=1274.6s
+resnet56 epoch 10 done: train_loss=0.7271 test_acc=0.7232 elapsed=1303.4s
+resnet56 epoch 11/100 step 0/391 loss=0.6479 lr=0.1000 elapsed=1303.7s
+resnet56 epoch 11/100 step 100/391 loss=0.5716 lr=0.1000 elapsed=1331.8s
+resnet56 epoch 11/100 step 200/391 loss=0.5702 lr=0.1000 elapsed=1359.2s
+resnet56 epoch 11/100 step 300/391 loss=0.4549 lr=0.1000 elapsed=1387.3s
+resnet56 epoch 11 done: train_loss=0.6755 test_acc=0.7357 elapsed=1416.2s
+resnet56 epoch 12/100 step 0/391 loss=0.7198 lr=0.1000 elapsed=1416.6s
+resnet56 epoch 12/100 step 100/391 loss=0.6155 lr=0.1000 elapsed=1447.5s
+resnet56 epoch 12/100 step 200/391 loss=0.6223 lr=0.1000 elapsed=1478.6s
+resnet56 epoch 12/100 step 300/391 loss=0.6344 lr=0.1000 elapsed=1519.9s
+resnet56 epoch 12 done: train_loss=0.6350 test_acc=0.7584 elapsed=1549.4s
+resnet56 epoch 13/100 step 0/391 loss=0.6216 lr=0.1000 elapsed=1549.7s
+resnet56 epoch 13/100 step 100/391 loss=0.5419 lr=0.1000 elapsed=1585.6s
+resnet56 epoch 13/100 step 200/391 loss=0.5659 lr=0.1000 elapsed=1624.4s
+resnet56 epoch 13/100 step 300/391 loss=0.6762 lr=0.1000 elapsed=1653.5s
+resnet56 epoch 13 done: train_loss=0.6054 test_acc=0.7583 elapsed=1689.0s
+resnet56 epoch 14/100 step 0/391 loss=0.7168 lr=0.1000 elapsed=1689.3s
+resnet56 epoch 14/100 step 100/391 loss=0.5852 lr=0.1000 elapsed=1713.3s
+resnet56 epoch 14/100 step 200/391 loss=0.6068 lr=0.1000 elapsed=1737.6s
+resnet56 epoch 14/100 step 300/391 loss=0.4723 lr=0.1000 elapsed=1762.0s
+resnet56 epoch 14 done: train_loss=0.5784 test_acc=0.7958 elapsed=1789.7s
+resnet56 epoch 15/100 step 0/391 loss=0.6808 lr=0.1000 elapsed=1790.0s
+resnet56 epoch 15/100 step 100/391 loss=0.5643 lr=0.1000 elapsed=1817.8s
+resnet56 epoch 15/100 step 200/391 loss=0.4321 lr=0.1000 elapsed=1844.4s
+resnet56 epoch 15/100 step 300/391 loss=0.5985 lr=0.1000 elapsed=1871.4s
+resnet56 epoch 15 done: train_loss=0.5496 test_acc=0.7427 elapsed=1898.1s
+resnet56 epoch 16/100 step 0/391 loss=0.6233 lr=0.1000 elapsed=1898.4s
+resnet56 epoch 16/100 step 100/391 loss=0.4925 lr=0.1000 elapsed=1924.6s
+resnet56 epoch 16/100 step 200/391 loss=0.4984 lr=0.1000 elapsed=1949.8s
+resnet56 epoch 16/100 step 300/391 loss=0.6037 lr=0.1000 elapsed=1976.0s
+resnet56 epoch 16 done: train_loss=0.5226 test_acc=0.7702 elapsed=2015.6s
+resnet56 epoch 17/100 step 0/391 loss=0.4850 lr=0.1000 elapsed=2016.2s
+resnet56 epoch 17/100 step 100/391 loss=0.5181 lr=0.1000 elapsed=2047.6s
+resnet56 epoch 17/100 step 200/391 loss=0.5021 lr=0.1000 elapsed=2073.3s
+resnet56 epoch 17/100 step 300/391 loss=0.5200 lr=0.1000 elapsed=2101.2s
+resnet56 epoch 17 done: train_loss=0.5066 test_acc=0.7728 elapsed=2140.2s
+resnet56 epoch 18/100 step 0/391 loss=0.3565 lr=0.1000 elapsed=2141.5s
+resnet56 epoch 18/100 step 100/391 loss=0.7008 lr=0.1000 elapsed=2180.4s
+resnet56 epoch 18/100 step 200/391 loss=0.5378 lr=0.1000 elapsed=2209.4s
+resnet56 epoch 18/100 step 300/391 loss=0.4782 lr=0.1000 elapsed=2237.5s
+resnet56 epoch 18 done: train_loss=0.4923 test_acc=0.7803 elapsed=2270.7s
+resnet56 epoch 19/100 step 0/391 loss=0.5664 lr=0.1000 elapsed=2271.9s
+resnet56 epoch 19/100 step 100/391 loss=0.5175 lr=0.1000 elapsed=2308.6s
+resnet56 epoch 19/100 step 200/391 loss=0.4982 lr=0.1000 elapsed=2342.2s
+resnet56 epoch 19/100 step 300/391 loss=0.5749 lr=0.1000 elapsed=2380.7s
+resnet56 epoch 19 done: train_loss=0.4766 test_acc=0.7755 elapsed=2412.2s
+resnet56 epoch 20/100 step 0/391 loss=0.3999 lr=0.1000 elapsed=2412.6s
+resnet56 epoch 20/100 step 100/391 loss=0.2984 lr=0.1000 elapsed=2443.0s
+resnet56 epoch 20/100 step 200/391 loss=0.5415 lr=0.1000 elapsed=2475.9s
+resnet56 epoch 20/100 step 300/391 loss=0.4382 lr=0.1000 elapsed=2504.5s
+resnet56 epoch 20 done: train_loss=0.4622 test_acc=0.7636 elapsed=2535.9s
+resnet56 epoch 21/100 step 0/391 loss=0.4184 lr=0.1000 elapsed=2536.2s
+resnet56 epoch 21/100 step 100/391 loss=0.3735 lr=0.1000 elapsed=2566.0s
+resnet56 epoch 21/100 step 200/391 loss=0.3465 lr=0.1000 elapsed=2598.8s
+resnet56 epoch 21/100 step 300/391 loss=0.2761 lr=0.1000 elapsed=2634.9s
+resnet56 epoch 21 done: train_loss=0.4426 test_acc=0.8117 elapsed=2666.9s
+resnet56 epoch 22/100 step 0/391 loss=0.3259 lr=0.1000 elapsed=2667.2s
+resnet56 epoch 22/100 step 100/391 loss=0.4821 lr=0.1000 elapsed=2694.6s
+resnet56 epoch 22/100 step 200/391 loss=0.5017 lr=0.1000 elapsed=2722.1s
+resnet56 epoch 22/100 step 300/391 loss=0.4467 lr=0.1000 elapsed=2748.7s
+resnet56 epoch 22 done: train_loss=0.4301 test_acc=0.8208 elapsed=2789.9s
+resnet56 epoch 23/100 step 0/391 loss=0.3485 lr=0.1000 elapsed=2790.3s
+resnet56 epoch 23/100 step 100/391 loss=0.4609 lr=0.1000 elapsed=2820.8s
+resnet56 epoch 23/100 step 200/391 loss=0.5989 lr=0.1000 elapsed=2863.6s
+resnet56 epoch 23/100 step 300/391 loss=0.4231 lr=0.1000 elapsed=2894.2s
+resnet56 epoch 23 done: train_loss=0.4171 test_acc=0.8040 elapsed=2927.9s
+resnet56 epoch 24/100 step 0/391 loss=0.3764 lr=0.1000 elapsed=2928.4s
+resnet56 epoch 24/100 step 100/391 loss=0.4012 lr=0.1000 elapsed=2959.1s
+resnet56 epoch 24/100 step 200/391 loss=0.3587 lr=0.1000 elapsed=2989.2s
+resnet56 epoch 24/100 step 300/391 loss=0.5689 lr=0.1000 elapsed=3023.0s
+resnet56 epoch 24 done: train_loss=0.4011 test_acc=0.8305 elapsed=3057.2s
+resnet56 epoch 25/100 step 0/391 loss=0.4073 lr=0.1000 elapsed=3058.5s
+resnet56 epoch 25/100 step 100/391 loss=0.4219 lr=0.1000 elapsed=3090.2s
+resnet56 epoch 25/100 step 200/391 loss=0.4430 lr=0.1000 elapsed=3121.9s
+resnet56 epoch 25/100 step 300/391 loss=0.4507 lr=0.1000 elapsed=3152.5s
+resnet56 epoch 25 done: train_loss=0.3938 test_acc=0.8197 elapsed=3188.3s
+resnet56 epoch 26/100 step 0/391 loss=0.3600 lr=0.1000 elapsed=3188.6s
+resnet56 epoch 26/100 step 100/391 loss=0.4092 lr=0.1000 elapsed=3233.3s
+resnet56 epoch 26/100 step 200/391 loss=0.4022 lr=0.1000 elapsed=3277.6s
+resnet56 epoch 26/100 step 300/391 loss=0.3932 lr=0.1000 elapsed=3321.4s
+resnet56 epoch 26 done: train_loss=0.3817 test_acc=0.8241 elapsed=3369.3s
+resnet56 epoch 27/100 step 0/391 loss=0.3046 lr=0.1000 elapsed=3370.0s
+resnet56 epoch 27/100 step 100/391 loss=0.3104 lr=0.1000 elapsed=3417.2s
+resnet56 epoch 27/100 step 200/391 loss=0.2971 lr=0.1000 elapsed=3463.9s
+resnet56 epoch 27/100 step 300/391 loss=0.4208 lr=0.1000 elapsed=3505.1s
+resnet56 epoch 27 done: train_loss=0.3693 test_acc=0.8201 elapsed=3547.0s
+resnet56 epoch 28/100 step 0/391 loss=0.3314 lr=0.1000 elapsed=3547.5s
+resnet56 epoch 28/100 step 100/391 loss=0.3258 lr=0.1000 elapsed=3579.3s
+resnet56 epoch 28/100 step 200/391 loss=0.3099 lr=0.1000 elapsed=3611.6s
+resnet56 epoch 28/100 step 300/391 loss=0.2945 lr=0.1000 elapsed=3641.5s
+resnet56 epoch 28 done: train_loss=0.3675 test_acc=0.8344 elapsed=3671.6s
+resnet56 epoch 29/100 step 0/391 loss=0.2615 lr=0.1000 elapsed=3671.9s
+resnet56 epoch 29/100 step 100/391 loss=0.4669 lr=0.1000 elapsed=3700.6s
+resnet56 epoch 29/100 step 200/391 loss=0.3515 lr=0.1000 elapsed=3733.4s
+resnet56 epoch 29/100 step 300/391 loss=0.3798 lr=0.1000 elapsed=3784.3s
+resnet56 epoch 29 done: train_loss=0.3557 test_acc=0.7786 elapsed=3825.2s
+resnet56 epoch 30/100 step 0/391 loss=0.5271 lr=0.1000 elapsed=3826.9s
+resnet56 epoch 30/100 step 100/391 loss=0.2670 lr=0.1000 elapsed=3861.3s
+resnet56 epoch 30/100 step 200/391 loss=0.3167 lr=0.1000 elapsed=3919.6s
+resnet56 epoch 30/100 step 300/391 loss=0.3243 lr=0.1000 elapsed=3966.3s
+resnet56 epoch 30 done: train_loss=0.3424 test_acc=0.8243 elapsed=4003.4s
+resnet56 epoch 31/100 step 0/391 loss=0.2853 lr=0.1000 elapsed=4003.9s
+resnet56 epoch 31/100 step 100/391 loss=0.3216 lr=0.1000 elapsed=4031.3s
+resnet56 epoch 31/100 step 200/391 loss=0.2951 lr=0.1000 elapsed=4057.5s
+resnet56 epoch 31/100 step 300/391 loss=0.4273 lr=0.1000 elapsed=4084.4s
+resnet56 epoch 31 done: train_loss=0.3405 test_acc=0.8393 elapsed=4112.5s
+resnet56 epoch 32/100 step 0/391 loss=0.2398 lr=0.1000 elapsed=4112.7s
+resnet56 epoch 32/100 step 100/391 loss=0.5114 lr=0.1000 elapsed=4137.4s
+resnet56 epoch 32/100 step 200/391 loss=0.3002 lr=0.1000 elapsed=4178.6s
+resnet56 epoch 32/100 step 300/391 loss=0.3052 lr=0.1000 elapsed=4206.3s
+resnet56 epoch 32 done: train_loss=0.3361 test_acc=0.8273 elapsed=4240.1s
+resnet56 epoch 33/100 step 0/391 loss=0.3599 lr=0.1000 elapsed=4240.5s
+resnet56 epoch 33/100 step 100/391 loss=0.2976 lr=0.1000 elapsed=4276.3s
+resnet56 epoch 33/100 step 200/391 loss=0.3668 lr=0.1000 elapsed=4312.9s
+resnet56 epoch 33/100 step 300/391 loss=0.2508 lr=0.1000 elapsed=4337.4s
+resnet56 epoch 33 done: train_loss=0.3281 test_acc=0.8120 elapsed=4362.8s
+resnet56 epoch 34/100 step 0/391 loss=0.4342 lr=0.1000 elapsed=4363.5s
+resnet56 epoch 34/100 step 100/391 loss=0.2944 lr=0.1000 elapsed=4387.3s
+resnet56 epoch 34/100 step 200/391 loss=0.4026 lr=0.1000 elapsed=4428.0s
+resnet56 epoch 34/100 step 300/391 loss=0.3821 lr=0.1000 elapsed=4458.4s
+resnet56 epoch 34 done: train_loss=0.3196 test_acc=0.7733 elapsed=4486.2s
+resnet56 epoch 35/100 step 0/391 loss=0.2601 lr=0.1000 elapsed=4486.6s
+resnet56 epoch 35/100 step 100/391 loss=0.3582 lr=0.1000 elapsed=4513.0s
+resnet56 epoch 35/100 step 200/391 loss=0.4031 lr=0.1000 elapsed=4550.4s
+resnet56 epoch 35/100 step 300/391 loss=0.3545 lr=0.1000 elapsed=4589.2s
+resnet56 epoch 35 done: train_loss=0.3192 test_acc=0.7951 elapsed=4640.3s
+resnet56 epoch 36/100 step 0/391 loss=0.2478 lr=0.1000 elapsed=4641.0s
+resnet56 epoch 36/100 step 100/391 loss=0.2642 lr=0.1000 elapsed=4681.7s
+resnet56 epoch 36/100 step 200/391 loss=0.2757 lr=0.1000 elapsed=4713.3s
+resnet56 epoch 36/100 step 300/391 loss=0.3220 lr=0.1000 elapsed=4742.7s
+resnet56 epoch 36 done: train_loss=0.3094 test_acc=0.8303 elapsed=4780.0s
+resnet56 epoch 37/100 step 0/391 loss=0.2591 lr=0.1000 elapsed=4780.3s
+resnet56 epoch 37/100 step 100/391 loss=0.3134 lr=0.1000 elapsed=4806.0s
+resnet56 epoch 37/100 step 200/391 loss=0.3272 lr=0.1000 elapsed=4829.9s
+resnet56 epoch 37/100 step 300/391 loss=0.2687 lr=0.1000 elapsed=4862.6s
+resnet56 epoch 37 done: train_loss=0.3088 test_acc=0.8519 elapsed=4893.2s
+resnet56 epoch 38/100 step 0/391 loss=0.3429 lr=0.1000 elapsed=4893.5s
+resnet56 epoch 38/100 step 100/391 loss=0.2842 lr=0.1000 elapsed=4922.7s
+resnet56 epoch 38/100 step 200/391 loss=0.2014 lr=0.1000 elapsed=4951.8s
+resnet56 epoch 38/100 step 300/391 loss=0.2404 lr=0.1000 elapsed=4979.6s
+resnet56 epoch 38 done: train_loss=0.3038 test_acc=0.8471 elapsed=5014.7s
+resnet56 epoch 39/100 step 0/391 loss=0.2452 lr=0.1000 elapsed=5015.1s
+resnet56 epoch 39/100 step 100/391 loss=0.2655 lr=0.1000 elapsed=6113.4s
+resnet56 epoch 39/100 step 200/391 loss=0.3574 lr=0.1000 elapsed=8659.6s
+resnet56 epoch 39/100 step 300/391 loss=0.2097 lr=0.1000 elapsed=9790.0s
+resnet56 epoch 39 done: train_loss=0.2982 test_acc=0.8348 elapsed=12305.0s
+resnet56 epoch 40/100 step 0/391 loss=0.3136 lr=0.1000 elapsed=12305.6s
+resnet56 epoch 40/100 step 100/391 loss=0.2398 lr=0.1000 elapsed=14843.1s
+resnet56 epoch 40/100 step 200/391 loss=0.2688 lr=0.1000 elapsed=16514.7s
+resnet56 epoch 40/100 step 300/391 loss=0.3039 lr=0.1000 elapsed=17203.3s
+Traceback (most recent call last):
+  File "/opt/anaconda3/lib/python3.13/multiprocessing/queues.py", line 262, in _feed
+    obj = _ForkingPickler.dumps(obj)
+  File "/opt/anaconda3/lib/python3.13/multiprocessing/reduction.py", line 51, in dumps
+    cls(buf, protocol).dump(obj)
+    ~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "/opt/anaconda3/lib/python3.13/site-packages/torch/multiprocessing/reductions.py", line 604, in reduce_storage
+    metadata = storage._share_filename_cpu_()
+  File "/opt/anaconda3/lib/python3.13/site-packages/torch/storage.py", line 449, in wrapper
+    return fn(self, *args, **kwargs)
+  File "/opt/anaconda3/lib/python3.13/site-packages/torch/storage.py", line 531, in _share_filename_cpu_
+    return super()._share_filename_cpu_(*args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+RuntimeError: Shared memory manager connection has timed out
+Exception raised from recv at /Users/runner/work/pytorch/pytorch/pytorch/torch/lib/libshm/../../../torch/lib/libshm/socket.h:67 (most recent call first):
+frame #0: c10::Error::Error(c10::SourceLocation, std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char>>) + 52 (0x12387d5dc in libc10.dylib)
+frame #1: c10::detail::torchCheckFail(char const*, char const*, unsigned int, char const*) + 192 (0x12387a368 in libc10.dylib)
+frame #2: Socket::recv(void*, unsigned long) + 340 (0x11fc4b034 in libshm.dylib)
+frame #3: THManagedMapAllocatorInit::THManagedMapAllocatorInit(char const*, char const*) + 1436 (0x11fc47dc0 in libshm.dylib)
+frame #4: THManagedMapAllocator::makeDataPtr(char const*, char const*, int, unsigned long) + 76 (0x11fc484f8 in libshm.dylib)
+frame #5: THPStorage_shareFilename(_object*, _object*) + 144 (0x1258ac2b0 in libtorch_python.dylib)
+frame #6: cfunction_vectorcall_NOARGS + 100 (0x10039c6e0 in python3.13)
+frame #7: _PyEval_EvalFrameDefault + 64932 (0x1004cae80 in python3.13)
+frame #8: PyObject_CallOneArg + 116 (0x10031c050 in python3.13)
+frame #9: save + 9272 (0x1009ac200 in _pickle.cpython-313-darwin.so)
+frame #10: save + 1156 (0x1009aa24c in _pickle.cpython-313-darwin.so)
+frame #11: save_reduce + 440 (0x1009ae754 in _pickle.cpython-313-darwin.so)
+frame #12: save + 648 (0x1009aa050 in _pickle.cpython-313-darwin.so)
+frame #13: save + 1192 (0x1009aa270 in _pickle.cpython-313-darwin.so)
+frame #14: save_reduce + 440 (0x1009ae754 in _pickle.cpython-313-darwin.so)
+frame #15: save + 648 (0x1009aa050 in _pickle.cpython-313-darwin.so)
+frame #16: save + 2652 (0x1009aa824 in _pickle.cpython-313-darwin.so)
+frame #17: save + 1192 (0x1009aa270 in _pickle.cpython-313-darwin.so)
+frame #18: dump + 356 (0x1009a99d8 in _pickle.cpython-313-darwin.so)
+frame #19: _pickle_Pickler_dump + 132 (0x1009a954c in _pickle.cpython-313-darwin.so)
+frame #20: cfunction_vectorcall_FASTCALL_KEYWORDS_METHOD + 112 (0x10039c480 in python3.13)
+frame #21: _PyEval_EvalFrameDefault + 87224 (0x1004d0594 in python3.13)
+frame #22: method_vectorcall + 364 (0x10032125c in python3.13)
+frame #23: thread_run + 176 (0x10062463c in python3.13)
+frame #24: pythread_wrapper + 48 (0x100597a24 in python3.13)
+frame #25: _pthread_start + 136 (0x18bcebbc8 in libsystem_pthread.dylib)
+frame #26: thread_start + 8 (0x18bce6b80 in libsystem_pthread.dylib)
+
